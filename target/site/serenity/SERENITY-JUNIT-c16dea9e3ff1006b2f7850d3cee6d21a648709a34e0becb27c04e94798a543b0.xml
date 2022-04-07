@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Create new user" skipped="0" tests="1" time="43.83" timestamp="2022-04-07 12:12:50"><testcase name="Create new user at the platform for testing"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+co.com.choucair.retoTecnico.tasks.DevicesInformation.performAs(DevicesInformation.java:28)&#13;
+co.com.choucair.retoTecnico.stepdefinitions.RetoTecnicoStepDefinition.heFillAllInputsInThePlatform(RetoTecnicoStepDefinition.java:31)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>
