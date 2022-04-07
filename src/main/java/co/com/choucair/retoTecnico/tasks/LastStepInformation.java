@@ -30,6 +30,8 @@ public class LastStepInformation implements Task {
                 Enter.theValue(data.get(0).getStrConfirmPassword()).into(CONFIRM_PASSWORD_INPUT),
                 Click.on(CHECK_STAY_INFORMED),
                 Click.on(CHECK_TERMS_OF_USE),
-                Click.on(CHECK_POLICY_PRIVACY));
+                Click.on(CHECK_POLICY_PRIVACY),
+                Click.on(COMPLETE_SETUP));
+        
     }
 }
