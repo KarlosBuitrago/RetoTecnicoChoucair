@@ -21,7 +21,7 @@ public class RetoTecnicoStepDefinition {
     }
 
     @Given("^that Carlos wants create a new user in the platform$")
-    public void that_Carlos_wants_create_a_new_user_in_the_platform() {
+    public void that_Carlos_wants_create_a_new_user_in_the_platform() throws Exception{
         // Write code here that turns the phrase above into concrete actions
         OnStage.theActorCalled("Carlos").wasAbleTo(OpenPageUp.thePage());
 

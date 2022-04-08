@@ -19,13 +19,13 @@ public class DevicesInformationPage extends PageObject {
             .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[1]/div[2]/div[2]/div/input[1]"));
     public static final Target CONTAINER_LANGUAGE = Target
             .the("This Container language of your computer")
-            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[1]/div[3]/div[2]/div/div[1]/span/span[2]"));
+            .located(By.name("osLanguageId"));
     public static final Target LANGUAGE = Target
             .the("Select language of your computer")
             .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[1]/div[3]/div[2]/div/input[1]"));
     public static final Target CONTAINER_MOBILE = Target
             .the("This Container for your mobile")
-            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[2]/div[1]/div[2]/div/div[1]/span/span[2]"));
+            .located(By.name("handsetMakerId"));
     public static final Target MOBILE = Target
             .the("Select your mobile")
             .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[2]/div[1]/div[2]/div/input[1]"));
@@ -37,7 +37,7 @@ public class DevicesInformationPage extends PageObject {
             .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[2]/div[2]/div[2]/div/input[1]"));
     public static final Target CONTAINER_OPERATING_SYSTEM = Target
             .the("This Container for operating system of your computer")
-            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[2]/div[3]/div[2]/div/div[1]/span/span[1]"));
+            .located(By.name("handsetOSId"));
     public static final Target OPERATING_SYSTEM = Target
             .the("Select oparating system of your mobile")
             .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[2]/div[3]/div[2]/div/input[1]"));

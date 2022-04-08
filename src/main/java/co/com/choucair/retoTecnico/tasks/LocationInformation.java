@@ -8,7 +8,6 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
-import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.Keys;
 
 import java.util.List;
@@ -16,7 +15,7 @@ import java.util.List;
 import static co.com.choucair.retoTecnico.userinterface.registro.LocationInformationPage.*;
 
 public class LocationInformation implements Task {
-    private LocationInformationPage locationInformationPage;
+
     private List<RegisterTestData> data;
 
     public LocationInformation(List<RegisterTestData> data) {
@@ -30,13 +29,12 @@ public class LocationInformation implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Enter.keyValues(data.get(0).getStrCity()).into(CITY),
+                Enter.theValue(data.get(0).getStrCity()).into(CITY),
                 Hit.the(Keys.ARROW_DOWN).into(CITY),
                 Hit.the(Keys.ENTER).into(CITY),
                 Enter.theValue(data.get(0).getStrCodePostal()).into(CODE_POSTAL),
                 Click.on(COUNTRY),
                 Enter.theValue(data.get(0).getStrCountry()).into(SELECT_COUNTRY),
-
                 Click.on(NEXT_DEVICE));
     }
 }

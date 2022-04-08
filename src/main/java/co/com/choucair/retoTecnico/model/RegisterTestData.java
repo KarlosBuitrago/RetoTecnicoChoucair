@@ -19,7 +19,7 @@ public class RegisterTestData {
     private String strModelMobile;
     private String strOperatingSystem;
     private String strPassword;
-        private String strConfirmPassword;
+    private String strConfirmPassword;
     private String strButtonLastStep;
 
     public String getStrButonLastStep() {
