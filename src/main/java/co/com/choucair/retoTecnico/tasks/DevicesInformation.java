@@ -35,8 +35,8 @@ public class DevicesInformation implements Task {
                 Enter.theValue(data.get(0).getStrMobile()).into(MOBILE),
                 Click.on(CONTAINER_MODEL),
                 Enter.theValue(data.get(0).getStrModelMobile()).into(MODEL),
-                Click.on(CONTAINER_OPERATING_SISTEM),
-                Enter.theValue(data.get(0).getStrOperatingSystem()).into(OPERATING_SISTEM),
+                Click.on(CONTAINER_OPERATING_SYSTEM),
+                Enter.theValue(data.get(0).getStrOperatingSystem()).into(OPERATING_SYSTEM),
                 Click.on(LAST_STEP)
         );
     }

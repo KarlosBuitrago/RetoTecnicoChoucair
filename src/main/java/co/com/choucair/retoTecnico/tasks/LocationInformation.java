@@ -8,6 +8,7 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Hit;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.Keys;
 
 import java.util.List;
@@ -28,14 +29,14 @@ public class LocationInformation implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Enter.keyValues(data.get(0).getStrCity()).into(CITY),
+        actor.attemptsTo(
+                Enter.keyValues(data.get(0).getStrCity()).into(CITY),
                 Hit.the(Keys.ARROW_DOWN).into(CITY),
                 Hit.the(Keys.ENTER).into(CITY),
-                Enter.keyValues(data.get(0).getStrCodePostal()).into(CODE_POSTAL),
-                Hit.the(Keys.ARROW_DOWN).into(CODE_POSTAL),
-                Hit.the(Keys.ENTER).into(CODE_POSTAL),
+                Enter.theValue(data.get(0).getStrCodePostal()).into(CODE_POSTAL),
                 Click.on(COUNTRY),
                 Enter.theValue(data.get(0).getStrCountry()).into(SELECT_COUNTRY),
+
                 Click.on(NEXT_DEVICE));
     }
 }

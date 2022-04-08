@@ -7,11 +7,11 @@ Feature: Create new user
   Scenario: Create new user at the platform for testing
     Given that Carlos wants create a new user in the platform
     When he fill all inputs in the platform
-      | strName | strLastName | strEmail                  | strMonth | strDay | strYear | strLanguage | strCity | strCodePostal | strCountry | strComputer | strVersionComputer | strLanguageComputer  | strMobile | strModelMobile | strOperatingSystem |
-      | Carlos  | Buitrago    | carlobuitragoc5@gmail.com | October  | 22     | 1979    | Spanish     | Ibagué  | 730003        | Colombia   | Windows     | Windows 10         | Spanish              | Motorola  | Moto G6        | Android 9.0 (Pie)  |
+      | strName | strLastName | strEmail                    | strMonth | strDay | strYear | strLanguage | strCity | strCodePostal | strCountry | strComputer | strVersionComputer | strLanguageComputer | strMobile | strModelMobile | strOperatingSystem | strPassword  | strConfirmPassword |
+      | Carlos  | Buitrago    | carlosbuitrago_@hotmail.com | October  | 22     | 1979    | Spanish     | Ibagué  | 730003        | Colombia   | Windows     | Windows 10         | Spanish             | Motorola  | Bravo          | Android 4.0        | Buitrago1234 | Buitrago1234       |
     Then is confirmed the new user created
       | strButtonLastStep |
-      | chevron_left     |
+      | chevron_left      |
 
 
 
